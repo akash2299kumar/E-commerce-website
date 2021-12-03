@@ -1,0 +1,644 @@
+                    /* default */
+nav,header,footer,section{
+    display: block;
+}
+h1,h2,h3,h6{
+    margin-bottom:1%;
+}
+a{
+    text-decoration: none;
+    color: #0178b0;
+    font-size: 16px;
+}
+body, ul, div,h1,h2,h3,h5,p,h6{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-size: 1rem; */
+    margin: 0;
+    padding: 0;
+}
+.head{
+    width: 100%;
+    min-height: 520px;
+    /* margin: auto;
+    padding: 0; */
+}
+.container{
+    margin: auto;
+    width: 100%;
+    padding: 1.5% 0;
+    text-align: -webkit-center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+/* ####################  Navigationn Bar  ########################### */
+nav{
+    /* position: fixed; */
+    width: 100%;
+    background-color: #eef5ff ;
+    text-align: center;
+    padding: 2% 0 0 0;
+    /* font-size: 28px; */
+    
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+.topnav li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+}
+li.topnav-left{
+    float: left;
+    margin-top: 0;
+    padding-left: 1%;
+}
+li.topnav-right{
+    float: right;
+    /* padding-right: 20px; */
+}
+
+li.signup-box{
+    /* padding: 5px; */
+    /* background-color: #5E43D1; */
+    /* border-radius: 5px; */
+}
+.topnav a{
+    text-decoration: none;
+    color: #453157;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1%;
+}
+/* .signup-box a{
+    color: white;
+    font-size: 14px;
+    text-transform: lowercase;
+    padding: 10px;
+} */
+.topnav a:hover{
+    color: rgb(58, 200, 219);
+}
+.topnav-left i{
+    font-size: 48px;
+    /* color: rgb(58, 200, 219); */
+    color: #5E43D1;
+    font-weight: 500;
+}
+.home a{
+    color: #5E43D1;
+    font-weight: 600;
+}
+li.dropdown{
+    display: none;
+}
+
+
+/* ##############  Cover Photo Secction    #################### */
+.bg-img{
+    position: absolute;
+    background: #0178b0
+    url(new_cove.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    backdrop-filter: blur(10px);
+    z-index:-1;
+}
+.content-block{
+    padding-top: 8%;
+    text-align: center;
+}
+.content-wrap{
+    text-align: center;
+    color: #453157;
+}
+.tagline{
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 50px;
+    padding-bottom: 1%;
+}
+.content-wrap h3{
+    padding-bottom: 1%;
+    font-size: 26px;
+    color: #5E43D1;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+.content-wrap a{
+    border-radius: 5px;
+    box-shadow: 5px 1px 5px gray;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    background-color: #5E43D1 ;
+    padding: 1% 2%;
+    text-transform: uppercase;
+}
+.content-wrap a:hover{
+    background-color: #40748a;
+    color: white;
+}
+
+
+/* ################ Delivery Section ############################### */
+.delivery{
+    /* background-color: rgb(241, 238, 238); */
+    /* background-color: #40748a; */
+    background-color: #eef5ff00 ;
+    padding-top: 5%;
+}
+.ccol-1-3{
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.sec{
+    margin: 0 4%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    padding: 8% 6%;
+}
+.sec i{
+    font-size: 20px;
+}
+.sec h3{
+    padding: 3% 0;
+    text-transform: uppercase;
+}
+
+
+/* ################ CAtegory Section ######################## */
+
+.category{
+    padding: 3% 0;
+}
+.category-tagline{
+    text-align: left;
+    margin-left: 11%;
+}
+.col-1-4{
+    display: block;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 1%;
+    
+}
+
+/* .bg-color{
+    background: linear-gradient(to right, #ffc0cb42, #f39eac);
+    background-color: #eef5ff50 ;
+} */
+.category-img{
+    border-radius: 5px;
+    position: relative;
+    background: linear-gradient(to top, #FFC0CB 80%, #FFF 20%);
+    /* background: rgba(255,255,255,0.4); */
+    /* margin-top: 40px; */
+    width: 100%;
+    height: 250px;
+}
+.category-color-1{
+    background: linear-gradient(to top, #eef5ff 80%, #FFF 20%);
+}
+.category-color-2{
+    background: linear-gradient(to top, #eef5ff 80%, #FFF 20%);
+}
+.category-color-3{
+    background: linear-gradient(to top, #eef5ff 80%, #FFF 20%);
+}
+.category-color-4{
+    background: linear-gradient(to top, #eef5ff 80%, #FFF 20%);
+}
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to top, rgba(225, 225, 225, 0.4) 80%, #FFF 20%);
+    backdrop-filter: blur(10px);
+}
+.category img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.centered{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.centered h5{
+    margin-bottom: 3%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #453157;
+    text-transform: uppercase;
+}
+/* 
+############################################################
+                    FASHION SECTION
+#############################################################
+*/
+.section-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75%;
+    gap: 1rem 2rem;
+    margin: 3rem auto;
+    transition: all 0.3s linear;
+}
+.dress-item{
+    position: relative ;
+    /* transition: all 0.3s linear; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+.middle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 0.75rem 0.75rem;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    transition: all 0.3s linear;
+}
+
+.dress-item:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    /* border-radius: 0.75rem; */
+}
+
+.dress-item:hover .fa-heart{
+    animation: heart-color 1s ease-out 2ms;
+}
+.text:hover{
+    color: #5E43D1;
+    background: #FFF;
+}
+.dress-title{
+    color: #fff;
+    font-size: 120%;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-weight: 500;
+    /* line-height: 1rem; */
+    letter-spacing: 0.15rem;
+    max-width: 8rem;
+    margin: 12% 0 0 8%;
+}
+.middle del{
+    color: rgb(58, 56, 56);
+    font-size: 100%;
+}
+.middle span{
+    font-size: 120%;
+}
+.dress-price{
+    color: rgb(235, 226, 226);
+    font-weight: 500;
+    position: absolute;
+    top: 68%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+.text{
+    position: absolute;
+    background: #5E43D1;
+    color: #FFF;
+    font-size: 100%;
+    border-radius: 12px;
+    padding: 2% 10%;
+    top: 80%;
+    left: 38%;
+    font-weight: 600;
+    text-transform: capitalize;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.3s linear;
+}
+.section-center img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+}
+
+.fa-heart{
+    position: absolute;
+    top: 80%;
+    right: 13%;
+    background: white;
+    padding: 0.3rem;
+    border-radius: 40%;
+    color: #5E43D1;
+    transform: translate(-50%, -50%);
+    /* font-size: 1.3rem; */
+}
+@keyframes heart-color{
+    100% {
+        color: #FFC0CB;
+    }
+}
+
+/* ############### MAIN Section ######################### */
+.product{
+    color: #40748a;
+    text-align: center;
+    padding: 5% 0 2% 0;
+}
+.product h2{
+    font-size: 40px;
+}
+.product h5{
+    font-size: 26px;
+}
+.main{
+    padding-bottom: 5%;
+}
+.col-1-3{
+    display: block;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.col-index{
+    margin: 0 4%;
+}
+.col-index h6{
+    color: black;
+    margin: 2% 0 0 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+.stars span{
+    font-size: 24px;
+    color: yellow;
+}
+.col-index p{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+.col-index del{
+    margin-left: 3%;
+    color: gray;
+    
+}
+.main img{
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+}
+/* 
+##################
+Logo Section
+##################
+*/
+.logo{
+    display: flex;
+    gap: 0 3rem;
+    margin: 5% auto;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.logo img{
+    width: 8%;
+}
+
+
+/* 
+#################
+New section 
+#################
+ */
+
+.new-section{
+    width: 90vw;
+    margin: 0 auto;
+    gap: 0 4rem;
+    max-width: 1000px;
+    align-items: center;
+}
+.new-items-info h2{
+    margin: 1rem 0 2rem 0;
+}
+.items-inside{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+    /* width: 25rem; */
+    text-transform: capitalize;
+}
+.nino-img{
+    position: relative;
+}
+.nino-promo{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    /* height: 10rem; */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 5% 0;
+}
+.nino-promo h3{
+    margin-bottom: 0.5rem;
+}
+.nino-img img{
+    border-radius: 1rem;
+    width: 100%;
+}
+.items-inside img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+
+
+
+/* ############### Footer Scetion ###################### */
+footer{
+    background-color: #eef5ff;
+    color: black
+}
+@media(min-width:680px){
+    .new-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* dress-section */
+    .section-center{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .middle{
+        height: 0%;
+        border-radius: 0.75rem;
+    }
+    .dress-item:hover .middle{
+        height: 100%;
+        transition: all 0.3s linear;
+    }
+    .items-inside{
+        width: 25rem;
+    }
+}
+
+/* ##############  Mobile Compatible  ################### */
+
+@media(max-width:680px){
+    /* dress-section */
+    .dress-title{
+        font-size: 8px;
+        margin: 0.75rem;
+    }
+    .dress-price{
+        top: 28%;
+        left: 85%;
+        font-size: 8px;
+    }
+    .text{
+        font-size: 8px;
+    }
+    .fa-heart{
+        font-size: 8px;
+    }
+    /* .middle{
+        animation: pop 5s ease;
+    }
+    @keyframes pop{
+        0%{transform: scale(0);}
+        50%
+        100%{transform: scale(0);}
+    } */
+    /*  */
+    .topnav li:not(:nth-child(1)){
+        display: none;
+        overflow: hidden;
+    }
+    .topnav{
+        background-color: #eef5ff;
+        overflow: hidden;
+    }
+    nav.topnav ul li{
+        float: left;
+    }
+    .topnav li.dropdown{
+        display: inline-block;
+        float: right;
+    }
+    .topnav.responsive  li.dropdown{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive li{
+        display: inline;
+        float: none;
+        margin: 0;
+    }
+    .topnav.responsive li.topnav-left{
+        display: none;
+    }
+    .topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    /* ############## Image Section ############## */
+    .bg-img{
+        background-position: center;
+    }
+    .head{
+        position: relative;
+    }
+    .content-block{
+        padding: 0;
+        text-align: center;
+    }
+    .content-wrap{
+        padding-top: 160px;
+    }
+    .block-back{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 80%;
+        /* border: 1px solid black; */
+        padding: 20px;
+        background-color: gray;
+        opacity: 0.4;
+        overflow: hidden;
+        z-index: -1;
+    }
+    .col-1-3{
+        width: 100%;
+        margin: 3% 0;
+    }
+    .sec h3{
+        font-size: 14px;
+    }
+    .sec p{
+        display: none;
+    }
+    .product{
+        padding-top: 6%;
+    }
+    .product h2{
+        font-size: 26px;
+    }
+    .product h5{
+        font-size: 16px;
+    }
+    /* ################## CAtegory ######################### */
+    .col-1-4{
+        width: 50%;
+    }
+    .category-img{
+        height: 150px;
+    }
+    .blur{
+        height: 150px;
+    }
+    .category-tagline{
+        margin-top: 6%;
+    }
+    .centered h5, p{
+        font-size: 14px;
+    }
+    /* LOGO SECTION */
+    .logo{
+        gap: 0 0.5rem;
+    }
+}
